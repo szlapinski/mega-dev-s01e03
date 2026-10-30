@@ -1,0 +1,38 @@
+---
+layout: runbook
+title: '#4471 · split by normalized subject'
+owner: support desk
+status: proposed
+reviewed: 2026-10-31
+signature: 'v1.eyJzdWIiOiIyODkzIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTM0MDIyMDIsImV4cCI6MTc5MzQ4ODYwMn0.Rllol91OkCi92U_vOkHjA1yzVTTrW3FOnk7ZiJxhV6c'
+---
+
+<script>
+  import SubjectBreakdown from '#lib/kb/SubjectBreakdown.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+#4471 contains reports with twelve distinct normalized subjects. The accepted triage rule
+defines duplicates by lowercasing the subject and stripping punctuation, so this page records
+one ticket for each subject group. The table computes the counts from unique report IDs in the
+export rather than repeating totals by hand.
+
+<SubjectBreakdown />
+
+## What this grouping does and does not say
+
+The subject rule is the accepted policy in decision 0001. It is the basis for the twelve ticket
+counts above. It does not establish that each subject is a distinct technical root cause.
+
+The executable classifier uses tenant locale, booking form, and channel. It finds two technical
+causes across these reports: the shared date parser and the booking form's date hint. The table
+shows that cause breakdown inside each subject group as separate diagnostic evidence; it does
+not silently replace the accepted subject rule with cause-based grouping.
+
+## Source and limits
+
+These counts use the supplied export, dated 2026-10-04. They describe that snapshot, not the
+desk's live queue. Duplicate export rows are collapsed by report ID before counting. A matching
+subject is the desk's current operational rule, not proof that the reports share the same cause.
+
+<RenderStamp {signature} />
