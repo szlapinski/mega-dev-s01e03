@@ -19,6 +19,21 @@ export rather than repeating totals by hand.
 
 <SubjectBreakdown />
 
+## Tickets filed
+
+- [Appointment moved by itself](https://github.com/szlapinski/mega-dev-s01e03/issues/1)
+- [Booking on the wrong date](https://github.com/szlapinski/mega-dev-s01e03/issues/2)
+- [Booking shows a different day](https://github.com/szlapinski/mega-dev-s01e03/issues/3)
+- [Calendar invite is wrong](https://github.com/szlapinski/mega-dev-s01e03/issues/4)
+- [Client turned up on the wrong day](https://github.com/szlapinski/mega-dev-s01e03/issues/5)
+- [Date is wrong](https://github.com/szlapinski/mega-dev-s01e03/issues/6)
+- [Dates mixed up](https://github.com/szlapinski/mega-dev-s01e03/issues/7)
+- [Invite came on the wrong day](https://github.com/szlapinski/mega-dev-s01e03/issues/8)
+- [Month and day swapped?](https://github.com/szlapinski/mega-dev-s01e03/issues/9)
+- [Reminder went out on the wrong day](https://github.com/szlapinski/mega-dev-s01e03/issues/10)
+- [Wrong date again](https://github.com/szlapinski/mega-dev-s01e03/issues/11)
+- [Wrong day on the invite](https://github.com/szlapinski/mega-dev-s01e03/issues/12)
+
 ## What this grouping does and does not say
 
 The subject rule is the accepted policy in decision 0001. It is the basis for the twelve ticket
